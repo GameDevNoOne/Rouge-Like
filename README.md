@@ -16,7 +16,7 @@ RoadMap:
  - Player movement
  - Weapon functions
  - Enemies
- - Xp system
+ - Xp and money system
  - Loot drops
  - Bosses
  - Hub area
