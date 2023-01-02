@@ -22,6 +22,7 @@ RoadMap:
  - Hub area
  - NPCs
  - Weapon variety
+ - Crafting
  - Factions
  - Lore implementation
  - Player creation
