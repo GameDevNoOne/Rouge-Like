@@ -11,6 +11,7 @@ All the links for tutorials will be here:
  - How to use Unity with GitHub (https://youtu.be/qpXxcvS-g3g)
  
 RoadMap:
+ - Lore building
  - Sprite Implementation
  - Player movement
  - Weapon functions
@@ -21,5 +22,6 @@ RoadMap:
  - Hub area
  - Weapon variety
  - Factions
+ - Lore implementation
  - Player creation
  - RDG (Random dungeon generator)
