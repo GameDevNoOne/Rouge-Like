@@ -9,3 +9,17 @@ This is a solo project in which I will use tutorials and some of my own knowledg
 
 All the links for tutorials will be here:
  - How to use Unity with GitHub (https://youtu.be/qpXxcvS-g3g)
+ 
+RoadMap:
+ - Sprite Implementation
+ - Player movement
+ - Weapon functions
+ - Enemies
+ - Xp system
+ - Loot drops
+ - Bosses
+ - Hub area
+ - Weapon variety
+ - Factions
+ - Player creation
+ - RDG (Random dungeon generator)
