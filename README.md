@@ -20,6 +20,7 @@ RoadMap:
  - Loot drops
  - Bosses
  - Hub area
+ - NPCs
  - Weapon variety
  - Factions
  - Lore implementation
