@@ -6,6 +6,7 @@ The actual repo for the Rouge-Like game.
 I am not very good at keeping things clean.
 
 This is a solo project in which I will use tutorials and some of my own knowledge to try and create a Rouge-Like set in a cube universe.
+This repo will probably be privated once the game is close to completion to be able to earn money with this game. But until then...
 
 All the links for tutorials will be here:
  - How to use Unity with GitHub (https://youtu.be/qpXxcvS-g3g)
