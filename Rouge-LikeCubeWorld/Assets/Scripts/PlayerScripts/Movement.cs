@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public float Speed;
     public Rigidbody2D player;
     Vector3 movement;
+    public float offset;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Moving();
+        Rotation();
     }
 
     public void Moving()
@@ -32,5 +34,12 @@ public class Movement : MonoBehaviour
         {
             player.MovePosition(transform.position + movement * Speed * Time.fixedDeltaTime);
         }
+    }
+
+    public void Rotation()
+    {
+        Vector3 difference = Camera.main.ScreenToViewportPoint(Input.mousePosition) - player.transform.position;
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ + offset);
     }
 }
