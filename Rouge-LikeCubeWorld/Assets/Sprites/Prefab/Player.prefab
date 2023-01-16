@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &346390581355673270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4262916793520364551}
+  m_Layer: 0
+  m_Name: shotPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4262916793520364551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346390581355673270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009, y: 0.172, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4522553127741066729}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557632123355278067
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   player: {fileID: 557632123355278076}
-  offset: 180
+  mouseTransform: {fileID: 557632123355278065}
 --- !u!50 &557632123355278076
 Rigidbody2D:
   serializedVersion: 4
@@ -161,6 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4522553127741066729}
   - component: {fileID: 1010642602258057373}
+  - component: {fileID: 4359563124683129752}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -179,7 +211,8 @@ Transform:
   m_LocalPosition: {x: 0.012000001, y: 0.23599999, z: 0}
   m_LocalScale: {x: 0.88000005, y: 0.88000005, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4262916793520364551}
   m_Father: {fileID: 557632123355278065}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -235,6 +268,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4359563124683129752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896601361613244140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65a4f61b87733e4d9c675b1113d322f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  gunPoint: {fileID: 0}
 --- !u!1 &5777470150872662604
 GameObject:
   m_ObjectHideFlags: 0

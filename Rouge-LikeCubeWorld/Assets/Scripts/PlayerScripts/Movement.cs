@@ -8,13 +8,13 @@ public class Movement : MonoBehaviour
     public float Speed;
     public Rigidbody2D player;
     Vector3 movement;
-    public float offset;
-
+    public Transform mouseTransform;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        mouseTransform = this.transform;
     }
 
     // Update is called once per frame
@@ -38,8 +38,9 @@ public class Movement : MonoBehaviour
 
     public void Rotation()
     {
-        Vector3 difference = Camera.main.ScreenToViewportPoint(Input.mousePosition) - player.transform.position;
-        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ + offset);
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseTransform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle-90, Vector3.forward);
+        mouseTransform.rotation = rotation;
     }
 }
