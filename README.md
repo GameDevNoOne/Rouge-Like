@@ -10,6 +10,8 @@ This repo will probably be privated once the game is close to completion to be a
 
 All the links for tutorials will be here:
  - How to use Unity with GitHub (https://youtu.be/qpXxcvS-g3g)
+ - How to rotate characters (https://youtu.be/149teLQMmOQ)
+ - How to make a 2D ranged combat system (https://youtu.be/bY4Hr2x05p8)
  
 RoadMap:
  - Lore building
