@@ -6,7 +6,6 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public float lifeTime;
-
     private void Start()
     {
         Invoke("DestroyProjectile", lifeTime);

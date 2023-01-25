@@ -448,6 +448,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 557632123600117639}
     - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 557632123600117639}
+    - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: bullet
       value: 
       objectReference: {fileID: 7693098537929990393, guid: b91d74c43696c39448d75b1e24d44400, type: 3}
@@ -474,3 +478,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 557632123355278065, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
   m_PrefabInstance: {fileID: 557632123600117638}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &557632123600117640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 346390581355673270, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+  m_PrefabInstance: {fileID: 557632123600117638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &557632123600117641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557632123600117640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77ffd343ca397a4db08aef396b1d27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseTransform: {fileID: 37967429}

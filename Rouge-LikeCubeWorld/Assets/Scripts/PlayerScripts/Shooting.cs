@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public GameObject bullet;
     public Transform gunPoint;
+    public Transform Player;
     private float timebtwShots;
     public float startTimeBTWShots;
 
@@ -21,7 +22,7 @@ public class Shooting : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(bullet, gunPoint.position, transform.rotation);
+                Instantiate(bullet, gunPoint.position, Player.transform.rotation);
                 timebtwShots = startTimeBTWShots;
             }
 

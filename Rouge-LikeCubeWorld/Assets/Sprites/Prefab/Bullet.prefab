@@ -162,3 +162,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   lifeTime: 1
+  player: {fileID: 0}
