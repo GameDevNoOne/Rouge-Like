@@ -15,9 +15,9 @@ All the links for tutorials will be here:
  - TOP DOWN SHOOTING in Unity (https://youtu.be/LNLVOjbrQj4)
  
 RoadMap:
- - ~~Lore building
- - ~~Sprite Implementation
- - ~~Player movement
+ - ~~Lore building~~
+ - ~~Sprite Implementation~~
+ - ~~Player movement~~
  - Weapon functions
  - Enemies
  - Xp and money system
