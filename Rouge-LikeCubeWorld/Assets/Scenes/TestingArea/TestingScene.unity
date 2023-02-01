@@ -448,6 +448,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 557632123600117639}
     - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 7693098537929990393, guid: b91d74c43696c39448d75b1e24d44400, type: 3}
+    - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 557632123600117639}
@@ -460,8 +464,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 37967429}
     - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: bulletForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: startTimeBTWShots
-      value: 0.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522553127741066729, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: m_RootOrder
