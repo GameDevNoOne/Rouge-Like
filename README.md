@@ -12,6 +12,7 @@ All the links for tutorials will be here:
  - How to use Unity with GitHub (https://youtu.be/qpXxcvS-g3g)
  - How to rotate characters (https://youtu.be/149teLQMmOQ)
  - How to make a 2D ranged combat system (https://youtu.be/bY4Hr2x05p8)
+ - TOP DOWN SHOOTING in Unity (https://youtu.be/LNLVOjbrQj4)
  
 RoadMap:
  - Lore building
