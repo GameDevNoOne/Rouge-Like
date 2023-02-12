@@ -18,7 +18,7 @@ RoadMap:
  - ~~Lore building~~
  - ~~Sprite Implementation~~
  - ~~Player movement~~
- - Weapon functions
+ - Weapon functions (In progress)
  - Enemies
  - Xp and money system
  - Loot drops
