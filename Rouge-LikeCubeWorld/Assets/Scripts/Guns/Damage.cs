@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public float Damag;
+    private float Damag;
     public GameObject Gun;
 
     // Start is called before the first frame update
@@ -21,9 +21,12 @@ public class Damage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            Destroy(this);
+            enemy.TakeDamage(Damag);
         }
+
+        Destroy(gameObject);
     }
 }

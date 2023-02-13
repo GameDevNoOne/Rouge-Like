@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PistolBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 2058474711003735992, guid: 2f3b639b47710764a973135a8619d3a9, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 2058474711003735998, guid: 2f3b639b47710764a973135a8619d3a9, type: 3}
       propertyPath: m_RootOrder
       value: 0
