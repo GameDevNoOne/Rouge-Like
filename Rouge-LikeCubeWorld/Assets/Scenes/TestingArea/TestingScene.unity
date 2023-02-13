@@ -385,6 +385,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2896601361613244140, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
   m_PrefabInstance: {fileID: 557632123600117638}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1838225939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4552639897821067428, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+  m_PrefabInstance: {fileID: 8117184709667775546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &557632123600117638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -445,6 +450,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 557632123355278079, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: Speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 557632123355278079, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: offset
       value: 0
       objectReference: {fileID: 0}
@@ -452,6 +461,10 @@ PrefabInstance:
       propertyPath: mouseTransform
       value: 
       objectReference: {fileID: 557632123600117639}
+    - target: {fileID: 2963969322970088945, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4359563124683129752, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: Bullet
       value: 
@@ -509,6 +522,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseTransform: {fileID: 37967429}
+--- !u!1 &557632123600117642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 557632123355278067, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+  m_PrefabInstance: {fileID: 557632123600117638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &557632123600117643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557632123600117642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342c54027f6c81c4ebe100f64a98c05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 557632123600117642}
+--- !u!114 &557632123600117644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557632123600117642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d02345b2b81b840bb11617bdca8984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
 --- !u!1001 &8117184709667775546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -516,6 +560,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 557632123600117639}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7887618796087318242, guid: 2e8b37666e3e9f54992a3a13fcba17ee, type: 3}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: shootPoint
+      value: 
+      objectReference: {fileID: 1838225939}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: bulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: minimumDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: timeBetweenShots
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234936138334710090, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8117184709365933274, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: Weapon
       value: 
