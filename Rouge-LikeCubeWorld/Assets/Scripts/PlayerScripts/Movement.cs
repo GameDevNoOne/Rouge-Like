@@ -10,11 +10,21 @@ public class Movement : MonoBehaviour
     Vector3 movement;
     public Transform mouseTransform;
 
+    [Header("Dashing")]
+    private Vector2 dir;
+    private float activeMoveSpeed;
+    public float dashSpeed;
+    public float dashLength;
+    public float dashCooldown;
+    private float dashCounter;
+    private float dashCooldownCounter;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
-        mouseTransform = this.transform;
+        mouseTransform = gameObject.transform;
+        activeMoveSpeed = Speed;
     }
 
     // Update is called once per frame
@@ -26,13 +36,36 @@ public class Movement : MonoBehaviour
 
     public void Moving()
     {
+        var dashInput = Input.GetButtonDown("Dash");
+
         movement = Vector3.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         if (movement != Vector3.zero)
         {
-            player.MovePosition(transform.position + movement * Speed * Time.fixedDeltaTime);
+            player.MovePosition(transform.position + movement * activeMoveSpeed * Time.fixedDeltaTime);
+        }
+
+        if (dashInput)
+        {
+            Dashing();
+        }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                activeMoveSpeed = Speed;
+                dashCooldownCounter = dashCooldown;
+            }
+        }
+
+        if (dashCooldownCounter > 0)
+        {
+            dashCooldownCounter -= Time.deltaTime;
         }
     }
 
@@ -42,5 +75,14 @@ public class Movement : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle-90, Vector3.forward);
         mouseTransform.rotation = rotation;
+    }
+
+    public void Dashing()
+    {
+        if (dashCooldownCounter <= 0 && dashCounter <= 0)
+        {
+            activeMoveSpeed = dashSpeed;
+            dashCounter = dashLength;
+        }
     }
 }
