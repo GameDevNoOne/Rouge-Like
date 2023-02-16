@@ -132,6 +132,9 @@ MonoBehaviour:
   Speed: 5
   player: {fileID: 557632123355278076}
   mouseTransform: {fileID: 557632123355278065}
+  dashSpeed: 0
+  dashLength: 0
+  dashCooldown: 0
 --- !u!50 &557632123355278076
 Rigidbody2D:
   serializedVersion: 4

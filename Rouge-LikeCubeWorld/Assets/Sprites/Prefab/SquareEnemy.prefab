@@ -178,6 +178,7 @@ MonoBehaviour:
   Speed: 2
   target: {fileID: 557632123355278065, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
   minimumDistance: 3
+  enemy: {fileID: 0}
   projectile: {fileID: 7887618796087318242, guid: 2e8b37666e3e9f54992a3a13fcba17ee, type: 3}
   timeBetweenShots: 3
   bulletSpeed: 10
@@ -237,7 +238,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7431710231445786607, guid: af38a490ddd99e746b9fad11068759a6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: af38a490ddd99e746b9fad11068759a6, type: 3}
 --- !u!1 &3185204329517670991 stripped
 GameObject:
