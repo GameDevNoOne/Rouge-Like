@@ -19,9 +19,16 @@ public class Movement : MonoBehaviour
     private float dashCounter;
     private float dashCooldownCounter;
 
+    [Header("PlayerActions")]
+    private GameObject PrimaryWeapon;
+    public Transform WeaponPosition;
+
     // Start is called before the first frame update
     void Start()
     {
+        PrimaryWeapon = GetComponent<PlayerStats>().weapon;
+        GameObject Gun = Instantiate(PrimaryWeapon, WeaponPosition);
+        Gun.transform.parent = WeaponPosition.transform;
         player = GetComponent<Rigidbody2D>();
         mouseTransform = gameObject.transform;
         activeMoveSpeed = Speed;

@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] public float Health;
+    [SerializeField] public GameObject weapon;
 }

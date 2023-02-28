@@ -190,8 +190,21 @@ PrefabInstance:
       propertyPath: dashCooldown
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 557632123355278079, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: WeaponPosition
+      value: 
+      objectReference: {fileID: 119282596}
+    - target: {fileID: 1716284019914386325, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+--- !u!4 &119282596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1716284019914386325, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+  m_PrefabInstance: {fileID: 16324879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &135901011
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +373,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &506435044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6386878553618127410, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+  m_PrefabInstance: {fileID: 8117184709667775546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &916230949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 557632123355278065, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+  m_PrefabInstance: {fileID: 16324879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1106404157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5349820302114369512, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+  m_PrefabInstance: {fileID: 8117184709667775546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1211856787
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,84 +472,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1838225939 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4552639897821067428, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
-  m_PrefabInstance: {fileID: 8117184709667775546}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2867706906622291385
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -1198562196719467142, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: Speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -1198562196719467142, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: -1198562196719467142, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: bulletSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -1198562196719467142, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: timeBetweenShots
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224586, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_Name
-      value: SquareEnemyShotgun
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.7906259
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.9733007
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2226666891570224588, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e1bfd02ef66f7944db128ac16a813fa5, type: 3}
 --- !u!1001 &8117184709667775546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,7 +490,11 @@ PrefabInstance:
     - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 916230949}
+    - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: weaponPos
+      value: 
+      objectReference: {fileID: 506435044}
     - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: projectile
       value: 
@@ -548,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: shootPoint
       value: 
-      objectReference: {fileID: 1838225939}
+      objectReference: {fileID: 1106404157}
     - target: {fileID: 994634162967672141, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: bulletSpeed
       value: 10
@@ -565,10 +519,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6386878553618127410, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.255
+      objectReference: {fileID: 0}
     - target: {fileID: 8117184709365933274, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: Weapon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4590614349359736043, guid: 34a93bc1933490d439cd28e91cb74903, type: 3}
     - target: {fileID: 8117184709365933281, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: m_Name
       value: SquareEnemy

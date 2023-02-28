@@ -15,6 +15,15 @@ public class EnemyBehaviour : MonoBehaviour
     private float nextshotTime;
     public float bulletSpeed;
     public Transform shootPoint;
+    private GameObject Weapon;
+    public Transform weaponPos;
+
+    public void Start()
+    {
+        Weapon = gameObject.GetComponent<EnemyStats>().Weapon;
+        GameObject Gun = Instantiate(Weapon, weaponPos);
+        Gun.transform.parent = weaponPos.transform;
+    }
 
     // Update is called once per frame
     void Update()
