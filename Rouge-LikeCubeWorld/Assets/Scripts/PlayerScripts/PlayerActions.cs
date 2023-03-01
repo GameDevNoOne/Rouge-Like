@@ -6,6 +6,8 @@ public class PlayerActions : MonoBehaviour
 {
     private float Health;
     public GameObject player;
+    public float Money;
+    private float value;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,7 @@ public class PlayerActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(float damage)
@@ -27,4 +29,15 @@ public class PlayerActions : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<CoinScript>(out CoinScript CoinValue))
+        {
+            value = CoinValue.GetComponent<CoinScript>().value;
+            Money += value;
+        }
+    }
+
+
 }
