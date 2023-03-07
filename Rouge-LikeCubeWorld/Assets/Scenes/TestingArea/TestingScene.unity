@@ -381,6 +381,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &504289341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504289342}
+  - component: {fileID: 504289343}
+  m_Layer: 0
+  m_Name: Shooting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504289342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504289341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6485845374459863132}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &504289343
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504289341}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.45}
+    newSize: {x: 0.45, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.055, y: 0.19816104}
+      - {x: -0.15284207, y: 0.31371504}
+      - {x: -0.5194932, y: 0.9019668}
+      - {x: -0.41503066, y: 1.0119275}
+      - {x: -0.30700427, y: 1.0880038}
+      - {x: -0.21765585, y: 1.1251198}
+      - {x: -0.13518542, y: 1.1434467}
+      - {x: 0.029293507, y: 1.1391643}
+      - {x: 0.18346022, y: 1.1033425}
+      - {x: 0.28522718, y: 1.0740396}
+      - {x: 0.38296315, y: 1.0249527}
+      - {x: 0.41475573, y: 0.9899768}
+      - {x: 0.47360083, y: 0.9602677}
+      - {x: 0.5397629, y: 0.9103955}
+      - {x: 0.027394254, y: 0.19432695}
 --- !u!4 &506435044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6386878553618127410, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
@@ -820,6 +892,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 077129b32767c6e47b5f3cd89b81183c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingRange: {fileID: 0}
+  shooting: {fileID: 504289341}
+  startTimeBtwShots: 0
 --- !u!1001 &1696274318362189607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -884,6 +959,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 622713970844589536, guid: 25f40e3fc0ae86445aba5aa938d7369d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6485845374882548242, guid: 25f40e3fc0ae86445aba5aa938d7369d, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -932,8 +1011,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 622713970844589536, guid: 25f40e3fc0ae86445aba5aa938d7369d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 25f40e3fc0ae86445aba5aa938d7369d, type: 3}
+--- !u!4 &6485845374459863132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6485845374882548242, guid: 25f40e3fc0ae86445aba5aa938d7369d, type: 3}
+  m_PrefabInstance: {fileID: 6485845374459863131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8117184709667775546
 PrefabInstance:
   m_ObjectHideFlags: 0
