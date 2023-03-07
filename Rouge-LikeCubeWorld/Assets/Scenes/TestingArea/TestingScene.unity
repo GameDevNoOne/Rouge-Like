@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 557632123355278076, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 557632123355278079, guid: e3816bbd6dad0d346a29056a4cba54e6, type: 3}
       propertyPath: dashSpeed
       value: 10
@@ -502,6 +506,10 @@ PrefabInstance:
       propertyPath: MoneyDrop
       value: 
       objectReference: {fileID: 3497050681079324693, guid: bdeb6bb7f4636174a922c6ad8eaf2884, type: 3}
+    - target: {fileID: 8117184709365933275, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
+      propertyPath: MoneyDropPos
+      value: 
+      objectReference: {fileID: 673334864}
     - target: {fileID: 8117184709365933281, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
       propertyPath: m_Name
       value: SquareEnemy (1)

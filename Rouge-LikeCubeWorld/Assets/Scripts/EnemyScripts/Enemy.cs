@@ -26,10 +26,10 @@ public class Enemy : MonoBehaviour
         Health -= damage;
         if (Health >= 0)
         {
-            int numberOfCoins = Random.Range(1, 6);
+            int numberOfCoins = Random.Range(0, 6);
             for (var i = 0;i < numberOfCoins; i++)
             {
-                Instantiate(MoneyDrop, MoneyDropPos);
+                Instantiate(MoneyDrop, gameObject.transform.position, gameObject.transform.rotation);
             }
             Destroy(gameObject);
         }
