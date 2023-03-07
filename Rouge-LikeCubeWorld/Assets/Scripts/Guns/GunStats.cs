@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunStats : MonoBehaviour
 {
     public float Damage;
-    public float MagSize;
+    public int MagSize;
     public float Price;
     public float Recoil;
 }

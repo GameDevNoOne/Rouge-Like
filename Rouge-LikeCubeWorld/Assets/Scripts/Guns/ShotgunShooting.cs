@@ -1,22 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class ShotgunShooting : MonoBehaviour
 {
-    public Transform shootPoint;
-    public GameObject Bullet;
+    private float Damage;
+    public Collider2D shootingRange;
     private int MagSize;
     private int originalMagSize;
+    public GameObject shooting;
 
-    public float bulletForce;
     private float timeBtwShots;
     public float startTimeBtwShots;
 
     private void Start()
     {
+        shootingRange = GetComponent<Collider2D>();
+        Damage = gameObject.GetComponent<GunStats>().Damage;
         MagSize = gameObject.GetComponent<GunStats>().MagSize;
         originalMagSize = MagSize;
+        shooting.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,11 +34,11 @@ public class Shooting : MonoBehaviour
                 {
                     Reload();
                 }
-                else if(MagSize != 0)
+                else if (MagSize != 0)
                 {
                     Shoot();
                     timeBtwShots = startTimeBtwShots;
-                }   
+                }
             }
             else
             {
@@ -50,11 +54,15 @@ public class Shooting : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject bullet = Instantiate(Bullet, shootPoint.position, shootPoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(shootPoint.up * bulletForce, ForceMode2D.Impulse);
+        shooting.SetActive(true);
+    }
 
-        MagSize -= 1;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            enemy.TakeDamage(Damage);
+        }
     }
 
     public void Reload()
