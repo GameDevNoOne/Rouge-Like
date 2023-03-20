@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class CoinCounter : MonoBehaviour
 {
-    [SerializeField] public Text coinCounter;
+    [SerializeField] public TMP_Text coinCounter;
     private float Money;
 
     // Update is called once per frame

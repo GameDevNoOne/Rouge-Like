@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53954edd935d8e344a39573a3bea9d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 737237284}
 --- !u!1 &1061151021
 GameObject:
   m_ObjectHideFlags: 0
