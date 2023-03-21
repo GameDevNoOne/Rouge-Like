@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-    private float Health;
+    public float Health;
     public GameObject player;
     public float Money;
     private float value;
