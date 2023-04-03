@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform shootPoint;
     public GameObject Bullet;
-    private int MagSize;
+    public int MagSize;
     private int originalMagSize;
 
     public float bulletForce;

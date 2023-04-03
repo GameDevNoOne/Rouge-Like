@@ -8,9 +8,11 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public float Health;
     [SerializeField] public GameObject weapon;
     [SerializeField] private float Money;
+    public float Magsize;
 
     private void Update()
     {
         Money = GetComponent<PlayerActions>().Money;
+        Magsize = weapon.GetComponent<Shooting>().MagSize;
     }
 }
