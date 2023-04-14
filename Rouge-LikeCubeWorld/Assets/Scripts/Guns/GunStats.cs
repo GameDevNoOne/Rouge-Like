@@ -8,4 +8,5 @@ public class GunStats : MonoBehaviour
     public int MagSize;
     public float Price;
     public float Recoil;
+
 }

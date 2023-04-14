@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Shooting : MonoBehaviour
 {
     public Transform shootPoint;
     public GameObject Bullet;
+    private GameObject Weapon;
     public int MagSize;
     private int originalMagSize;
+    public TextMeshProUGUI bulletCounter;
 
     public float bulletForce;
     private float timeBtwShots;
@@ -17,6 +20,7 @@ public class Shooting : MonoBehaviour
     {
         MagSize = gameObject.GetComponent<GunStats>().MagSize;
         originalMagSize = MagSize;
+        bulletCounter = GetComponentInParent<UICounters>().bulletCounter;
     }
 
     // Update is called once per frame
@@ -60,5 +64,12 @@ public class Shooting : MonoBehaviour
     public void Reload()
     {
         MagSize = originalMagSize;
+    }
+
+    public void BulletCounter()
+    {
+        string bulletsOut = MagSize.ToString();
+        Debug.Log(bulletsOut);
+        bulletCounter.text = (bulletsOut);
     }
 }

@@ -7,7 +7,7 @@ public class UICounters : MonoBehaviour
 {
     [SerializeField] public TMP_Text coinCounter;
     private float Money;
-    [SerializeField] public TMP_Text bulletCounter;
+    [SerializeField] public TextMeshProUGUI bulletCounter;
     private float bullets;
     private GameObject Weapon;
 
@@ -15,7 +15,6 @@ public class UICounters : MonoBehaviour
     void Update()
     {
         Coincounter();
-        BulletCounter();
     }
 
     public void Coincounter()
@@ -23,14 +22,5 @@ public class UICounters : MonoBehaviour
         Money = GetComponent<PlayerActions>().Money;
         string MoneyOut = Money.ToString();
         coinCounter.text = (MoneyOut);
-    }
-
-    public void BulletCounter()
-    {
-        Weapon = GetComponent<PlayerStats>().weapon;   
-        bullets = Weapon.GetComponent<Shooting>().MagSize;
-        string bulletsOut = bullets.ToString();
-        Debug.Log(bulletsOut);
-        bulletCounter.text = (bulletsOut);
     }
 }
