@@ -19,15 +19,9 @@ RoadMap:
  - ~~Sprite Implementation~~
  - ~~Player movement~~
  - Weapon functions (In progress)
- - Enemies
- - Xp and money system
- - Loot drops
+ - Enemies (In progress)
+ - Xp and money system (In progress)
  - Bosses
  - Hub area
  - NPCs
- - Weapon variety
- - Crafting
- - Factions
- - Lore implementation
- - Player creation
  - RDG (Random dungeon generator)
