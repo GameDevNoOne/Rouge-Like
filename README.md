@@ -19,9 +19,9 @@ RoadMap:
  - ~~Sprite Implementation~~
  - ~~Player movement~~
  - Weapon functions (In progress)
- - Enemies (In progress)
- - Xp and money system (In progress)
- - Bosses
- - Hub area
- - NPCs
- - RDG (Random dungeon generator)
+ - Enemies (In progress, *April/May*)
+ - Xp and money system (In progress, *April/May*)
+ - Bosses (*Presumably June*)
+ - Hub area (*Presumably April/May*)
+ - NPCs (*Presumably April/May*)
+ - RDG (Random dungeon generator, *Presumably June*)
