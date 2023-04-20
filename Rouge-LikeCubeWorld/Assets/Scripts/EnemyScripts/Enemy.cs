@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     private float RemainingHealth;
     public GameObject MoneyDrop;
     public Transform MoneyDropPos;
+    public GameObject expDrop;
+    public Transform expDropPos;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(MoneyDrop, gameObject.transform.position, gameObject.transform.rotation);
             }
+            Instantiate(expDrop, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }

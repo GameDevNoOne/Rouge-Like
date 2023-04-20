@@ -7,12 +7,16 @@ public class HealthUIUpdater : MonoBehaviour
 {
     public Slider healthSlider;
     private float health;
+    public Slider staminaSlider;
+    private float stamina;
 
     // Start is called before the first frame update
     void Start()
     {
         healthSlider.maxValue = GetComponent<PlayerStats>().Health;
         healthSlider.minValue = 0;
+        staminaSlider.maxValue = GetComponent<PlayerStats>().Stamina;
+        staminaSlider.minValue = 0;
     }
 
     // Update is called once per frame
@@ -20,5 +24,7 @@ public class HealthUIUpdater : MonoBehaviour
     {
         health = GetComponent<PlayerActions>().Health;
         healthSlider.value = health;
+        stamina = GetComponent<Movement>().Stamina;
+        staminaSlider.value = stamina;
     }
 }

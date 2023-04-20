@@ -9,6 +9,9 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public GameObject weapon;
     [SerializeField] private float Money;
     public float Magsize;
+    public float Stamina;
+    public float Level;
+    public float Exp;
 
     private void Update()
     {

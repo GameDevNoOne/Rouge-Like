@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     public float dashCooldown;
     private float dashCounter;
     private float dashCooldownCounter;
+    public float Stamina;
 
     [Header("PlayerActions")]
     private GameObject PrimaryWeapon;
@@ -32,6 +33,7 @@ public class Movement : MonoBehaviour
         player = GetComponent<Rigidbody2D>();
         mouseTransform = gameObject.transform;
         activeMoveSpeed = Speed;
+        Stamina = GetComponent<PlayerStats>().Stamina;
     }
 
     // Update is called once per frame
@@ -90,6 +92,7 @@ public class Movement : MonoBehaviour
         {
             activeMoveSpeed = dashSpeed;
             dashCounter = dashLength;
+            Stamina -= 10;
         }
     }
 }
