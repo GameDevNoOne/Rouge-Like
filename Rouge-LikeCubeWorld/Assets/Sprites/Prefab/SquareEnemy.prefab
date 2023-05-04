@@ -226,8 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9870ce3c17e44faea17b09a7eabf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoneyDrop: {fileID: 0}
-  MoneyDropPos: {fileID: 0}
+  MoneyDrop: {fileID: 3497050681079324693, guid: bdeb6bb7f4636174a922c6ad8eaf2884, type: 3}
+  MoneyDropPos: {fileID: 8117184709365933287}
+  expDrop: {fileID: 3418224179206426950, guid: 214bf79f0f87e2249934101d6eba5730, type: 3}
+  expDropPos: {fileID: 8117184709365933287}
 --- !u!114 &994634162967672141
 MonoBehaviour:
   m_ObjectHideFlags: 0

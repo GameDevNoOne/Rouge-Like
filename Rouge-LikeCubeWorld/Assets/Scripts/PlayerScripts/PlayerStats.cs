@@ -12,10 +12,27 @@ public class PlayerStats : MonoBehaviour
     public float Stamina;
     public float Level;
     public float Exp;
+    public float nextLevelRequirement;
+    public float percentualValue;
+
+    public void Start()
+    {
+        percentualValue = nextLevelRequirement * 10 / 100;
+    }
 
     private void Update()
     {
         Money = GetComponent<PlayerActions>().Money;
         Magsize = weapon.GetComponent<Shooting>().MagSize;
+        Exp = GetComponent<PlayerActions>().experiencePoints;
+
+        if (Exp >= nextLevelRequirement)
+        {
+            nextLevelRequirement = Exp + percentualValue;
+            Level += 1;
+            Health += 10;
+            Stamina += 10;
+            Exp = 0;
+        }
     }
 }

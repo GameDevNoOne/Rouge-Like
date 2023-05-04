@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     private float dashCounter;
     private float dashCooldownCounter;
     public float Stamina;
+    public bool dashPossible = true;
 
     [Header("PlayerActions")]
     private GameObject PrimaryWeapon;
@@ -56,7 +57,7 @@ public class Movement : MonoBehaviour
             player.MovePosition(transform.position + movement * activeMoveSpeed * Time.fixedDeltaTime);
         }
 
-        if (dashInput)
+        if (dashInput && dashPossible)
         {
             Dashing();
         }
@@ -70,6 +71,11 @@ public class Movement : MonoBehaviour
                 activeMoveSpeed = Speed;
                 dashCooldownCounter = dashCooldown;
             }
+        }
+
+        if (Stamina <= 0)
+        {
+            dashPossible = false;
         }
 
         if (dashCooldownCounter > 0)

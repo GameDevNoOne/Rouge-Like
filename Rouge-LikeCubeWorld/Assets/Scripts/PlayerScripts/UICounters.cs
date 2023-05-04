@@ -21,6 +21,7 @@ public class UICounters : MonoBehaviour
     {
         Money = GetComponent<PlayerActions>().Money;
         string MoneyOut = Money.ToString();
-        coinCounter.text = (MoneyOut);
+        string moneyOut = (MoneyOut);
+        coinCounter.text = moneyOut;
     }
 }
