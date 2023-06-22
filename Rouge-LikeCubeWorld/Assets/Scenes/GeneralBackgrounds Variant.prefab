@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 9082088951753952914}
   m_Layer: 0
   m_Name: SpawnPointDown
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -897,6 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7110c9b13b607af4c94f34582331e1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDir: 3
 --- !u!1 &3825049836209251289
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +912,7 @@ GameObject:
   - component: {fileID: 381573899192967729}
   m_Layer: 0
   m_Name: SpawnPointLeft
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,6 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7110c9b13b607af4c94f34582331e1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDir: 4
 --- !u!1 &6670327562035639706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1006,7 @@ GameObject:
   - component: {fileID: 6216043770319513771}
   m_Layer: 0
   m_Name: SpawnPointUp
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1083,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7110c9b13b607af4c94f34582331e1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDir: 1
 --- !u!1 &8479187746591959804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1100,7 @@ GameObject:
   - component: {fileID: 4965559013248050267}
   m_Layer: 0
   m_Name: SpawnPointRight
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,6 +1179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7110c9b13b607af4c94f34582331e1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDir: 2
 --- !u!1001 &8229520288586345176
 PrefabInstance:
   m_ObjectHideFlags: 0

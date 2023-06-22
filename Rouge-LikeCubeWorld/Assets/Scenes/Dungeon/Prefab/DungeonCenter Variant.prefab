@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &825923494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 825923495}
-  m_Layer: 0
-  m_Name: SpawnObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &825923495
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825923494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8505694782113724849}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5111309256165789002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 346468084153246494, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 2599629482977191902, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3523302439675868411, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
@@ -86,21 +59,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3825049836209251289, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5137680883914815065, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5283973522581776861, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670327562035639706, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 6818944277952495017, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_Name
-      value: DungeonCenter
+      value: DungeonCenter Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479187746591959804, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 9051786015132150390, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9127795034832957201, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
@@ -246,8 +231,3 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
---- !u!4 &8505694782113724849 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3523302439675868411, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
-  m_PrefabInstance: {fileID: 5111309256165789002}
-  m_PrefabAsset: {fileID: 0}

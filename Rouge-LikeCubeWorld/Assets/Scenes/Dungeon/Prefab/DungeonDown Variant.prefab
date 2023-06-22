@@ -901,11 +901,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6818944277952495017, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_Name
-      value: DungeonDown
+      value: DungeonDown Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8479187746591959804, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082088951753952914, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: openingDir
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}

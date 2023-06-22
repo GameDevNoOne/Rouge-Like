@@ -123,6 +123,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9738644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9738645}
+  - component: {fileID: 9738646}
+  m_Layer: 0
+  m_Name: RoomTemplate
+  m_TagString: Room
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9738645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9738644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9738646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9738644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1607b25d4be3a459eb012ce43a5e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomRooms:
+  - {fileID: 2828494252630277489, guid: 21aa9d7cd3b40b64a83269603d289b46, type: 3}
+  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
+  - {fileID: 3054261059990331313, guid: 53b8aed6bb9809a4a9ee636afd5f9097, type: 3}
+  - {fileID: 8050849315551419820, guid: 87f7d5c1f308a644f9b0f8e428b19e74, type: 3}
+  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
+  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
+  topRooms:
+  - {fileID: 9170041980268504007, guid: a621559f818420349baeb24ecfbba06d, type: 3}
+  - {fileID: 8050849315551419820, guid: 87f7d5c1f308a644f9b0f8e428b19e74, type: 3}
+  - {fileID: 6050026091085047416, guid: ff75f5b420415d34d84852576c99674d, type: 3}
+  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
+  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
+  - {fileID: 2688861191995842283, guid: df3ee197708ca1e43859655653643d7e, type: 3}
+  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
+  leftRooms:
+  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
+  - {fileID: 1464384391121311386, guid: 28ea368cb9daf7040b9523bddf8c30a8, type: 3}
+  - {fileID: 1069261006200724809, guid: d42d2be02299c36459a443a7a46cb66a, type: 3}
+  - {fileID: 6050026091085047416, guid: ff75f5b420415d34d84852576c99674d, type: 3}
+  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
+  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
+  rightRooms:
+  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
+  - {fileID: 3054261059990331313, guid: 53b8aed6bb9809a4a9ee636afd5f9097, type: 3}
+  - {fileID: 1069261006200724809, guid: d42d2be02299c36459a443a7a46cb66a, type: 3}
+  - {fileID: 5028246164383724975, guid: b9c7268c69e2c444dbdac45d01226f52, type: 3}
+  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
+  - {fileID: 2688861191995842283, guid: df3ee197708ca1e43859655653643d7e, type: 3}
+  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
 --- !u!1001 &752193025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -338,13 +412,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonCenter
       objectReference: {fileID: 0}
+    - target: {fileID: 1909182247878801616, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693836684091778998, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 4099695647377507288, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: openingDir
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4765338727098314324, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 4874191947974619003, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: openingDir
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357073694484770451, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 8505694782113724849, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: m_RootOrder

@@ -159,6 +159,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[55].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 381573899192967729, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: openingDir
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2530688791452904167, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 3
@@ -511,13 +515,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4965559013248050267, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: openingDir
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6670327562035639706, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6818944277952495017, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_Name
-      value: DungeonDownLeftRight
+      value: DungeonDownLeftRight Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082088951753952914, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: openingDir
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
