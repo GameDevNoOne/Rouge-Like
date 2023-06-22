@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 4390583394995823150, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
+      propertyPath: m_TagString
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5137680883914815065, guid: 095e5096240a22e4fa0e9e5eafb194dc, type: 3}
       propertyPath: m_RootOrder
       value: 2

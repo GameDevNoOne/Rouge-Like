@@ -169,34 +169,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bottomRooms:
   - {fileID: 2828494252630277489, guid: 21aa9d7cd3b40b64a83269603d289b46, type: 3}
-  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
   - {fileID: 3054261059990331313, guid: 53b8aed6bb9809a4a9ee636afd5f9097, type: 3}
   - {fileID: 8050849315551419820, guid: 87f7d5c1f308a644f9b0f8e428b19e74, type: 3}
-  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
-  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
+  - {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
   topRooms:
   - {fileID: 9170041980268504007, guid: a621559f818420349baeb24ecfbba06d, type: 3}
   - {fileID: 8050849315551419820, guid: 87f7d5c1f308a644f9b0f8e428b19e74, type: 3}
   - {fileID: 6050026091085047416, guid: ff75f5b420415d34d84852576c99674d, type: 3}
-  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
-  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
   - {fileID: 2688861191995842283, guid: df3ee197708ca1e43859655653643d7e, type: 3}
-  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
+  - {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
   leftRooms:
-  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
   - {fileID: 1464384391121311386, guid: 28ea368cb9daf7040b9523bddf8c30a8, type: 3}
   - {fileID: 1069261006200724809, guid: d42d2be02299c36459a443a7a46cb66a, type: 3}
   - {fileID: 6050026091085047416, guid: ff75f5b420415d34d84852576c99674d, type: 3}
-  - {fileID: 7997691624946858165, guid: 7dc78390af31b92439b234f0c48e04b3, type: 3}
-  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
+  - {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
   rightRooms:
-  - {fileID: 6134250618972555119, guid: ab092ebfc1f058848a2e6516e6948496, type: 3}
   - {fileID: 3054261059990331313, guid: 53b8aed6bb9809a4a9ee636afd5f9097, type: 3}
   - {fileID: 1069261006200724809, guid: d42d2be02299c36459a443a7a46cb66a, type: 3}
   - {fileID: 5028246164383724975, guid: b9c7268c69e2c444dbdac45d01226f52, type: 3}
-  - {fileID: 7151665011005555546, guid: d9d92ac4ba6e375488a10985ceafec0d, type: 3}
   - {fileID: 2688861191995842283, guid: df3ee197708ca1e43859655653643d7e, type: 3}
-  - {fileID: 3583956131567396629, guid: cb618364946b91b418ca8c2872ffd84d, type: 3}
+  - {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
 --- !u!1001 &752193025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -400,9 +392,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 118132882503056147, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 145858107833985297, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: openingDir
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201570839699465697, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: Spawned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1201570839699465697, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: openingDir
@@ -420,9 +420,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 3913798696819617548, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4099695647377507288, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: openingDir
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283314517554849596, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4765338727098314324, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
       propertyPath: m_TagString
