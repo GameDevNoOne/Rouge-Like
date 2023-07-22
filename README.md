@@ -1,7 +1,12 @@
 # Rouge-Like
-A Rouge-Like Shooter game I'll try to make in 6 months.
+A Rouge-Like Shooter game I'll try to make in 12 months.
 
 The actual repo for the Rouge-Like game.
+
+**NOTICE**
+***The development of the game has been temporeraly suspended and paused, I will be moving on to different projects in the meantime and will use this time to catch up with devlogs.
+Thank you for your understanding
+NoOne***
 
 I am not very good at keeping things clean.
 
@@ -18,10 +23,10 @@ RoadMap:
  - ~~Lore building~~
  - ~~Sprite Implementation~~
  - ~~Player movement~~
- - Weapon functions (In progress)
- - Enemies (In progress, *April/May*)
- - Xp and money system (In progress, *April/May*)
- - Bosses (*Presumably June*)
- - Hub area (*Presumably April/May*)
- - NPCs (*Presumably April/May*)
- - RDG (Random dungeon generator, *Presumably June*)
+ - Weapon functions (Suspended)
+ - Enemies (Suspended)
+ - Xp and money system (Suspended)
+ - Bosses (Suspended)
+ - Hub area (Suspended)
+ - NPCs (Suspended)
+ - ~~RDG (Random dungeon generator)~~
