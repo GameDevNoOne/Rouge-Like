@@ -4,9 +4,9 @@ A Rouge-Like Shooter game I'll try to make in 12 months.
 The actual repo for the Rouge-Like game.
 
 **NOTICE**
-***The development of the game has been temporeraly suspended and paused, I will be moving on to different projects in the meantime and will use this time to catch up with devlogs.
-Thank you for your understanding
-NoOne***
+***The development of the game has been temporeraly suspended and paused, I will be moving on to different projects in the meantime and will use this time to catch up with devlogs.***
+***Thank you for your understanding.***
+***NoOne***
 
 I am not very good at keeping things clean.
 
