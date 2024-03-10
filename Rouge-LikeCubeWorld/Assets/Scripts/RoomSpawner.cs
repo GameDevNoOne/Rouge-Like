@@ -48,7 +48,13 @@ public class RoomSpawner : MonoBehaviour
     {
         if (collision.CompareTag("SpawnPoint"))
         {
+            if (collision.GetComponent<RoomSpawner>().Spawned == false && Spawned == false)
+            {
+                Instantiate(roomTemplate.closedRoom, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
             Destroy(gameObject);
+            Spawned = true;
         }
     }
 }

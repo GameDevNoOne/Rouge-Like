@@ -9,6 +9,8 @@ TagManager:
   - Coin
   - SpawnPoint
   - Room
+  - Rooms
+  - ClosedRoom
   layers:
   - Default
   - TransparentFX
