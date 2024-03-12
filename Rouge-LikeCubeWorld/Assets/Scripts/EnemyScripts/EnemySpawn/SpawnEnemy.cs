@@ -19,28 +19,18 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         center = (UnityEngine.Random.insideUnitSphere * radius) + transform.position;
+        numberOfSpawns = UnityEngine.Random.Range(0, 10);
+        random = UnityEngine.Random.Range(0, enemyType.enemies.Length);
+        spawned = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(randomize());
-        StartCoroutine(spawn());
+        spawn();
     }
 
-    public void Spawn()
-    {
-
-    }
-
-    public IEnumerator randomize()
-    {
-        numberOfSpawns = UnityEngine.Random.Range(0, 10);
-        random = UnityEngine.Random.Range(0, enemyType.enemies.Length);
-        spawned = false;
-        yield return new WaitForSeconds(10);
-    }
-    public IEnumerator spawn()
+    public void spawn()
     {
         if (spawned == false)
         {
@@ -50,6 +40,5 @@ public class SpawnEnemy : MonoBehaviour
             }
             spawned = true;
         }
-        yield return new WaitForSeconds(11);
     }
 }
