@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 8117184709667775548}
+  - {fileID: 8117184709365933281, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
 --- !u!4 &522331749
 Transform:
   m_ObjectHideFlags: 0
@@ -3419,11 +3419,6 @@ PrefabInstance:
 --- !u!4 &8117184709667775547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8117184709365933287, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
-  m_PrefabInstance: {fileID: 8117184709667775546}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8117184709667775548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8117184709365933281, guid: fbba850116628f044a9ce85186a9c3d0, type: 3}
   m_PrefabInstance: {fileID: 8117184709667775546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

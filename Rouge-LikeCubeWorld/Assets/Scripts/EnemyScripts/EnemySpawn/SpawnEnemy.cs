@@ -9,7 +9,6 @@ using UnityEngine.UIElements;
 public class SpawnEnemy : MonoBehaviour
 {
     private EnemyTypes enemyType;
-    public int random;
     public bool spawned;
     public int numberOfSpawns;
     private Vector3 center;
@@ -20,14 +19,14 @@ public class SpawnEnemy : MonoBehaviour
     {
         center = (UnityEngine.Random.insideUnitSphere * radius) + transform.position;
         numberOfSpawns = UnityEngine.Random.Range(0, 10);
-        random = UnityEngine.Random.Range(0, enemyType.enemies.Length);
         spawned = false;
+        enemyType = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyTypes>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        spawn();
+        Invoke("spawn", 0.1f);
     }
 
     public void spawn()
@@ -36,7 +35,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             for (int i = 0; i < numberOfSpawns; i++)
             {
-                Instantiate(enemyType.enemies[random], center, Quaternion.identity);
+                Instantiate(enemyType.GetComponent<EnemyTypes>().enemies[0]);
             }
             spawned = true;
         }
