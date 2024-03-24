@@ -8,11 +8,12 @@ using UnityEngine.UIElements;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    private EnemyTypes enemyType;
+    public EnemyTypes enemyType;
     public bool spawned;
     public int numberOfSpawns;
     private Vector3 center;
     public float radius;
+    public int randEnemies;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,8 @@ public class SpawnEnemy : MonoBehaviour
         center = (UnityEngine.Random.insideUnitSphere * radius) + transform.position;
         numberOfSpawns = UnityEngine.Random.Range(0, 10);
         spawned = false;
-        enemyType = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyTypes>();
+        enemyType = gameObject.GetComponent<EnemyTypes>();
+        randEnemies = UnityEngine.Random.Range(0, enemyType.enemies.Length);
     }
 
     // Update is called once per frame
@@ -35,7 +37,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             for (int i = 0; i < numberOfSpawns; i++)
             {
-                Instantiate(enemyType.GetComponent<EnemyTypes>().enemies[0]);
+                Instantiate(enemyType.enemies[randEnemies], center, transform.rotation);
             }
             spawned = true;
         }

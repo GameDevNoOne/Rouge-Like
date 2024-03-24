@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour
 {
     public float Speed;
-    public Transform target;
+    public GameObject[] target;
     public float minimumDistance;
     public Transform enemy;
 
@@ -23,15 +23,16 @@ public class EnemyBehaviour : MonoBehaviour
         Weapon = gameObject.GetComponent<EnemyStats>().Weapon;
         GameObject Gun = Instantiate(Weapon, weaponPos);
         Gun.transform.parent = weaponPos.transform;
+        target = GameObject.FindGameObjectsWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Vector2.Distance(transform.position, target.position) < minimumDistance)
+        if (Vector2.Distance(transform.position, target[0].transform.position) < minimumDistance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, -Speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target[0].transform.position, -Speed * Time.deltaTime);
             Rotation();
 
             if (Time.time > nextshotTime)
@@ -44,7 +45,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Rotation()
     {
-        Vector2 direction = target.position - enemy.position;
+        Vector2 direction = target[0].transform.position - enemy.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         enemy.rotation = rotation;
