@@ -15,6 +15,9 @@ public class SpawnEnemy : MonoBehaviour
     public float radius;
     public int randEnemies;
 
+    [Header("Destroyed")]
+    public EdgeCollider2D collider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +43,14 @@ public class SpawnEnemy : MonoBehaviour
                 Instantiate(enemyType.enemies[randEnemies], center, transform.rotation);
             }
             spawned = true;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("CrystalSpawner"))
+        {
+            Destroy(gameObject);
         }
     }
 }
