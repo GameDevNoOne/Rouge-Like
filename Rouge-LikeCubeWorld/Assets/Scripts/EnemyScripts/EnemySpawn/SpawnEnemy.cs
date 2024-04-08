@@ -22,7 +22,7 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         center = (UnityEngine.Random.insideUnitSphere * radius) + transform.position;
-        numberOfSpawns = UnityEngine.Random.Range(0, 10);
+        numberOfSpawns = UnityEngine.Random.Range(0, 4);
         spawned = false;
         enemyType = gameObject.GetComponent<EnemyTypes>();
         randEnemies = UnityEngine.Random.Range(0, enemyType.enemies.Length);
