@@ -11,6 +11,8 @@ public class RoomChecker : MonoBehaviour
     public GameObject[] TreasureRooms;
 
     public StoreClerk storeRoom;
+    public BossRoom bossRoom;
+    public StorageRoom storageRoom;
 
     public float storeRoomsPossible;
     public float bossRoomsPossible;
@@ -19,7 +21,7 @@ public class RoomChecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Invoke("CheckRooms", 1f);
     }
 
     // Update is called once per frame
@@ -27,7 +29,6 @@ public class RoomChecker : MonoBehaviour
     {
 
     }
-
     public void CheckRooms()
     {
         ActiveRooms = GameObject.FindGameObjectsWithTag("Rooms");
@@ -42,7 +43,16 @@ public class RoomChecker : MonoBehaviour
                 storeRoom = StoreRooms[i].GetComponentInChildren<StoreClerk>();
                 storeRoom.gameObject.SetActive(false);
             }
-
+            if (BossRooms.Length > bossRoomsPossible * ActiveRooms.Length)
+            {
+                bossRoom = BossRooms[i].GetComponentInChildren<BossRoom>();
+                bossRoom.gameObject.SetActive(false);
+            }
+            if (TreasureRooms.Length > storeRoomsPossible * ActiveRooms.Length)
+            {
+                storageRoom = TreasureRooms[i].GetComponentInChildren<StorageRoom>();
+                storageRoom.gameObject.SetActive(false);
+            }
         }
     }
 }
