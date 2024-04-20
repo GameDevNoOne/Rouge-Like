@@ -190,6 +190,11 @@ MonoBehaviour:
   - {fileID: 2688861191995842283, guid: df3ee197708ca1e43859655653643d7e, type: 3}
   - {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
   closedRoom: {fileID: 3132073593131260674, guid: 2ff89265c5c6c584795ed8bf8e9147a2, type: 3}
+--- !u!1 &353221151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+  m_PrefabInstance: {fileID: 3808397845658131827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &752193025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,6 +354,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e027c750001294fa351b4531141752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CenterRoom: {fileID: 353221151}
+  Rooms: []
+  DistanceFromCenter: []
+  roomChecker: {fileID: 841447083}
+  I: 0
+  J: 0
 --- !u!1001 &2033769172
 PrefabInstance:
   m_ObjectHideFlags: 0

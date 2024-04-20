@@ -27,7 +27,7 @@ public class RoomChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        CheckRooms();
     }
     public void CheckRooms()
     {

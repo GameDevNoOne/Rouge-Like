@@ -16,13 +16,14 @@ public class BossRoomDecider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("SetBossRoom", 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Rooms = roomChecker.GetComponent<RoomChecker>().ActiveRooms;   
+        Rooms = roomChecker.GetComponent<RoomChecker>().ActiveRooms;
+        DistancefromCenter();
     }
 
     public void DistancefromCenter()
