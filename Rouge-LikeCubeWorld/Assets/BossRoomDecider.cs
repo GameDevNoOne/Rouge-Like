@@ -7,6 +7,7 @@ public class BossRoomDecider : MonoBehaviour
 {
     public GameObject CenterRoom;
     public GameObject[] Rooms;
+    List<float> distanceFromCenter = new List<float>();
     public float[] DistanceFromCenter;
     public RoomChecker roomChecker;
     private GameObject furthestRoom;
@@ -17,21 +18,22 @@ public class BossRoomDecider : MonoBehaviour
     void Start()
     {
         Invoke("SetBossRoom", 5f);
+        Invoke("DistancefromCenter", 4f);
     }
 
     // Update is called once per frame
     void Update()
     {
         Rooms = roomChecker.GetComponent<RoomChecker>().ActiveRooms;
-        DistancefromCenter();
     }
 
     public void DistancefromCenter()
     {
         for (int i = 0; i < Rooms.Length; i++)
         {
-            DistanceFromCenter[i] = ((Mathf.Abs(CenterRoom.transform.position.x - Rooms[i].transform.position.x) * Mathf.Abs(CenterRoom.transform.position.x - Rooms[i].transform.position.x)) + (Mathf.Abs(CenterRoom.transform.position.y - Rooms[i].transform.position.y) * Mathf.Abs(CenterRoom.transform.position.y - Rooms[i].transform.position.y)));
+            distanceFromCenter.Add((Mathf.Abs(CenterRoom.transform.position.x - Rooms[i].transform.position.x) * Mathf.Abs(CenterRoom.transform.position.x - Rooms[i].transform.position.x)) + (Mathf.Abs(CenterRoom.transform.position.y - Rooms[i].transform.position.y) * Mathf.Abs(CenterRoom.transform.position.y - Rooms[i].transform.position.y)));
         }
+        DistanceFromCenter = distanceFromCenter.ToArray();
         I = DistanceFromCenter.Max();
         J = DistanceFromCenter.ToList().IndexOf(I);
     }
