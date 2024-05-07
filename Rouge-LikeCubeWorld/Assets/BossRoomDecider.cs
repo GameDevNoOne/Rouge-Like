@@ -17,8 +17,8 @@ public class BossRoomDecider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("SetBossRoom", 5f);
         Invoke("DistancefromCenter", 4f);
+        Invoke("SetBossRoom", 5f);
     }
 
     // Update is called once per frame
@@ -41,6 +41,6 @@ public class BossRoomDecider : MonoBehaviour
     public void SetBossRoom()
     {
         furthestRoom = Rooms[J];
-        furthestRoom.GetComponentInChildren<BossRoom>().gameObject.SetActive(true);
+        furthestRoom.GetComponentInChildren<GameObject>(CompareTag("BossRoom")).gameObject.SetActive(true);
     }
 }

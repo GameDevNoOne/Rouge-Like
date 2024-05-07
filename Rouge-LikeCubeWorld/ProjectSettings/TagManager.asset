@@ -11,6 +11,7 @@ TagManager:
   - Room
   - Rooms
   - ClosedRoom
+  - BossRoom
   layers:
   - Default
   - TransparentFX

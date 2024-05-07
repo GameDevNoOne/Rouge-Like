@@ -446,6 +446,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 795065984414971787, guid: bb3e9458b9807d747956471958b9eb45, type: 3}
+      propertyPath: m_RendererIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1873065181920025373, guid: bb3e9458b9807d747956471958b9eb45, type: 3}
       propertyPath: m_Name
       value: URPCamera
