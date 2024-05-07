@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 45
+  controlID: 106
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -371,9 +371,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 18780000
-    m_LastClickedID: 30744
-    m_ExpandedIDs: 00000000187800003a7800008078000000ca9a3bffffff7f
+    m_SelectedIDs: 2e780000
+    m_LastClickedID: 30766
+    m_ExpandedIDs: 000000002e780000507800009a78000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -401,7 +401,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000018780000
+    m_ExpandedIDs: 000000002e780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,23 +541,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c66ffff
-      m_LastClickedID: -39348
-      m_ExpandedIDs: 9a66ffff66a6ffffe4afffff20bbffffced9ffffc8e3ffffcae3ffff10fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 10fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: DungeonRight Variant(Clone)
-        m_OriginalName: DungeonRight Variant(Clone)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -39270
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -962,9 +962,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -35.00768, y: -23.003584, z: 0}
+    m_Target: {x: 23.332638, y: -7.7996063, z: -1.886047}
     speed: 2
-    m_Value: {x: 43.917694, y: -20.579746, z: -1.0876992}
+    m_Value: {x: 20.444597, y: -8.144179, z: -1.8656517}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1014,9 +1014,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 20.599714
+    m_Target: 47.36298
     speed: 2
-    m_Value: 83.062294
+    m_Value: 45.323425
   m_Ortho:
     m_Target: 1
     speed: 2

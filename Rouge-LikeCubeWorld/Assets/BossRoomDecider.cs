@@ -10,9 +10,10 @@ public class BossRoomDecider : MonoBehaviour
     List<float> distanceFromCenter = new List<float>();
     public float[] DistanceFromCenter;
     public RoomChecker roomChecker;
-    private GameObject furthestRoom;
+    public GameObject furthestRoom;
     public float I;
     public int J;
+    public GameObject bossRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class BossRoomDecider : MonoBehaviour
     public void SetBossRoom()
     {
         furthestRoom = Rooms[J];
-        furthestRoom.GetComponentInChildren<GameObject>(CompareTag("BossRoom")).gameObject.SetActive(true);
+        bossRoom.transform.position = furthestRoom.transform.position;
+        bossRoom.SetActive(true);
     }
 }
