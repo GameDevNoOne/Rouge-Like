@@ -40,12 +40,15 @@ public class StoreRoomDecider : MonoBehaviour
 
     public void DecideStoreRoomLocation()
     {
-        randomNumber = Random.Range(2, rooms.Length);
-        StoreRoomLocation = rooms[randomNumber];
-        if (StoreRoomLocation == centerRoom)
+        for (int i = 0; i < storeRoomCount; i++)
         {
-            randomNumber = Random.Range(2, rooms.Length);
+            randomNumber = Random.RandomRange(2, rooms.Length);
             StoreRoomLocation = rooms[randomNumber];
+            if (StoreRoomLocation == centerRoom)
+            {
+                randomNumber = Random.RandomRange(2, rooms.Length);
+                StoreRoomLocation = rooms[randomNumber];
+            }
         }
     }
 
@@ -53,7 +56,7 @@ public class StoreRoomDecider : MonoBehaviour
     {
         for (int i = 0; i < storeRoomCount; i++)
         {
-            Invoke("DecideStoreRoomLocation", 2f);
+            Invoke
             Invoke("SpawnStoreRooms", 3f);
         }
     }
