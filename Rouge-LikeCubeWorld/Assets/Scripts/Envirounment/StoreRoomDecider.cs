@@ -56,7 +56,6 @@ public class StoreRoomDecider : MonoBehaviour
     {
         for (int i = 0; i < storeRoomCount; i++)
         {
-            Invoke
             Invoke("SpawnStoreRooms", 3f);
         }
     }
