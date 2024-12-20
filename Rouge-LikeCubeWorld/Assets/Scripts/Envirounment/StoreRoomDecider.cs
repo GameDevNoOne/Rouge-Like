@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,17 +17,26 @@ public class StoreRoomDecider : MonoBehaviour
     public int spawnFrequency;
     public GameObject StoreRoomLocation;
 
+    private bool hasSpawned = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("ActualSpawnFunction", 4f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Thread.Sleep(2000);
         rooms = roomChecker.GetComponent<RoomChecker>().ActiveRooms;
         countRoomsFunction();
+        if (hasSpawned == false)
+        {
+            List<GameObject> storeRoomLocation = DecideStoreRoomLocation();
+            SpawnStoreRooms(storeRoomLocation);
+            hasSpawned = true;
+        }
     }
 
     public void countRoomsFunction()
@@ -33,30 +44,28 @@ public class StoreRoomDecider : MonoBehaviour
         storeRoomCount = rooms.Length / spawnFrequency;
     }
 
-    public void SpawnStoreRooms()
+    public List<GameObject> DecideStoreRoomLocation()
     {
-        Instantiate(storeRoom, StoreRoomLocation.transform.position, StoreRoomLocation.transform.rotation);
-    }
-
-    public void DecideStoreRoomLocation()
-    {
+        List<GameObject> StoreRoomLocation = new List<GameObject>();
         for (int i = 0; i < storeRoomCount; i++)
         {
             randomNumber = Random.RandomRange(2, rooms.Length);
-            StoreRoomLocation = rooms[randomNumber];
-            if (StoreRoomLocation == centerRoom)
+
+            if (rooms[randomNumber] == centerRoom)
             {
                 randomNumber = Random.RandomRange(2, rooms.Length);
-                StoreRoomLocation = rooms[randomNumber];
             }
+
+            StoreRoomLocation.Add(rooms[randomNumber]);
         }
+        return (StoreRoomLocation);
     }
 
-    public void ActualSpawnFunction()
+    public void SpawnStoreRooms(List<GameObject> StoreRoomLocation)
     {
-        for (int i = 0; i < storeRoomCount; i++)
+        for (int i = 0; i < StoreRoomLocation.Count; i++)
         {
-            Invoke("SpawnStoreRooms", 3f);
+            Instantiate(storeRoom, StoreRoomLocation[i].transform.position, StoreRoomLocation[i].transform.rotation);
         }
     }
 }
