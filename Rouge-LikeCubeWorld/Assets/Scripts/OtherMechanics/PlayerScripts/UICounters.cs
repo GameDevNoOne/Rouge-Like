@@ -6,15 +6,16 @@ using UnityEngine;
 public class UICounters : MonoBehaviour
 {
     [SerializeField] public TMP_Text coinCounter;
-    private float Money;
+    public float Money;
     [SerializeField] public TextMeshProUGUI bulletCounter;
-    private float bullets;
-    private GameObject Weapon;
+    public float bullets;
+    public GameObject Weapon;
 
     // Update is called once per frame
     void Update()
     {
         Coincounter();
+        Weapon = GetComponentInChildren<GunStats>().gameObject;
     }
 
     public void Coincounter()

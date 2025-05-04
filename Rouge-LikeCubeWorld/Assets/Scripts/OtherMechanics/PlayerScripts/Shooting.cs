@@ -11,6 +11,7 @@ public class Shooting : MonoBehaviour
     public int MagSize;
     private int originalMagSize;
     public TextMeshProUGUI bulletCounter;
+    public float bullets;
 
     public float bulletForce;
     private float timeBtwShots;
@@ -21,6 +22,7 @@ public class Shooting : MonoBehaviour
         MagSize = gameObject.GetComponent<GunStats>().MagSize;
         originalMagSize = MagSize;
         bulletCounter = GetComponentInParent<UICounters>().bulletCounter;
+        bullets = GetComponentInParent<PlayerStats>().Ammo;
     }
 
     // Update is called once per frame
@@ -30,15 +32,18 @@ public class Shooting : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                if (MagSize == 0)
+                if (bullets > 0)
                 {
-                    Reload();
+                    if (MagSize == 0)
+                    {
+                        Reload();
+                    }
+                    else if (MagSize != 0)
+                    {
+                        Shoot();
+                        timeBtwShots = startTimeBtwShots;
+                    }
                 }
-                else if(MagSize != 0)
-                {
-                    Shoot();
-                    timeBtwShots = startTimeBtwShots;
-                }   
             }
             else
             {
@@ -50,6 +55,8 @@ public class Shooting : MonoBehaviour
         {
             Reload();
         }
+
+        BulletCounter();
     }
 
     public void Shoot()
@@ -64,6 +71,7 @@ public class Shooting : MonoBehaviour
     public void Reload()
     {
         MagSize = originalMagSize;
+        bullets -= MagSize;
     }
 
     public void BulletCounter()

@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public float Exp;
     public float nextLevelRequirement;
     public float percentualValue;
+    public float Ammo;
 
     public void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerStats : MonoBehaviour
         Money = GetComponent<PlayerActions>().Money;
         Magsize = weapon.GetComponent<Shooting>().MagSize;
         Exp = GetComponent<PlayerActions>().experiencePoints;
+        Ammo = weapon.GetComponent<Shooting>().bullets;
 
         if (Exp >= nextLevelRequirement)
         {
