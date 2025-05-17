@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BossRoom : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool bossRoomDecided;
+    private void Awake()
     {
-        
+        bossRoomDecided = true;
     }
 
     // Update is called once per frame

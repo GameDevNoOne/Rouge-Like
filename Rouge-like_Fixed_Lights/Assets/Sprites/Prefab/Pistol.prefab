@@ -134,6 +134,7 @@ MonoBehaviour:
   Bullet: {fileID: 7693098537929990393, guid: b91d74c43696c39448d75b1e24d44400, type: 3}
   MagSize: 0
   bulletCounter: {fileID: 0}
+  bullets: 0
   bulletForce: 30
   startTimeBtwShots: 0
 --- !u!114 &6180683269329863464

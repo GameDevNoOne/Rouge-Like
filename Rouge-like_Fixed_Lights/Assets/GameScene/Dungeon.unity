@@ -242,12 +242,7 @@ MonoBehaviour:
   randomNumber: 0
   spawnFrequency: 5
   StoreRoomLocation: {fileID: 0}
---- !u!1 &353221151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
-  m_PrefabInstance: {fileID: 3808397845658131827}
-  m_PrefabAsset: {fileID: 0}
---- !u!43 &372739382
+--- !u!43 &284542492
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,6 +407,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &353221151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1751553914259894499, guid: 37011e309474cea4bbf85d2908a622b5, type: 3}
+  m_PrefabInstance: {fileID: 3808397845658131827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &752193025
 PrefabInstance:
   m_ObjectHideFlags: 0

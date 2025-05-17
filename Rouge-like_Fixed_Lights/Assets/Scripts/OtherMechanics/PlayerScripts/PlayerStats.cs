@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
         Exp = GetComponent<PlayerActions>().experiencePoints;
         Ammo = weapon.GetComponent<Shooting>().bullets;
 
-        if (Exp >= nextLevelRequirement)
+        if (Exp > nextLevelRequirement)
         {
             nextLevelRequirement = Exp + percentualValue;
             Level += 1;
