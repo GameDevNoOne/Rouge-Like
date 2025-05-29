@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 88177911498137523}
   - component: {fileID: 8805711440308121116}
   - component: {fileID: 2740513177212953135}
+  - component: {fileID: -5759240067490273109}
   m_Layer: 0
   m_Name: Revolver
   m_TagString: Untagged
@@ -104,7 +105,7 @@ MonoBehaviour:
   Bullet: {fileID: 1275546749785028808, guid: f2434fefb41f3e04f88d1c79cde5a627, type: 3}
   MagSize: 0
   bulletCounter: {fileID: 0}
-  bullets: 0
+  bullets: 100
   bulletForce: 50
   startTimeBtwShots: 0
 --- !u!114 &2740513177212953135
@@ -123,6 +124,20 @@ MonoBehaviour:
   MagSize: 6
   Price: 1400
   Recoil: 0.5
+--- !u!114 &-5759240067490273109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3205835214414958574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d453e890e6d3a7341b24c0d8f5eafdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolver1: {fileID: 21300000, guid: 864450ff81393f64892c8a2deb5264ef, type: 3}
+  revolver2: {fileID: 21300000, guid: 71826ab70e1ceb94383b5596d8e7a6ae, type: 3}
 --- !u!1 &5046780433630266733
 GameObject:
   m_ObjectHideFlags: 0
