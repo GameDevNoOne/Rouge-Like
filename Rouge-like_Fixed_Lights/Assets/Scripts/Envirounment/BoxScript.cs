@@ -7,6 +7,7 @@ public class BoxScript : MonoBehaviour
     public float Health;
 
     public Sprite[] sprites;
+    public BoxCollider2D collider;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +18,6 @@ public class BoxScript : MonoBehaviour
     void Update()
     {
         CheckHealth();
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            Health -= collision.gameObject.GetComponentInParent<GunStats>().Damage;
-        }
     }
 
     void CheckHealth()
@@ -47,5 +40,10 @@ public class BoxScript : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().renderingLayerMask = 2;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
+    }
+
+    public void TakeDamage(float damage, float fireDamage, float electricDamage, float toxinDamage,float affinityChance, float criticalChance, float criticalMultiplier)
+    {
+        Health -= damage;
     }
 }
