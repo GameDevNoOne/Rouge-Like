@@ -61,7 +61,7 @@ public class ShotgunShooting : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeDamage(Damage);
+            Debug.Log("Hit");
         }
     }
 

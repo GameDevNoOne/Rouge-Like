@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class SMGShooting : MonoBehaviour
 {
     public Transform shootPoint;
     public GameObject Bullet;
@@ -30,7 +30,7 @@ public class Shooting : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButton("Fire1"))
             {
                 if (bullets > 0 - MagSize)
                 {

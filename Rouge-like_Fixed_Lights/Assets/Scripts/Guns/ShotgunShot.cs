@@ -15,7 +15,7 @@ public class ShotgunShot : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeDamage(Damage);
+            Debug.Log("Hit");//No solution is more permanent than a temporary one
         }
     }
 }

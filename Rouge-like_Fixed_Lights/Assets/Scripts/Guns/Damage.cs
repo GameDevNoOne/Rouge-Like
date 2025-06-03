@@ -37,7 +37,7 @@ public class Damage : MonoBehaviour
 
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeDamage(Damag);
+            enemy.TakeDamage(Damag, FireDamage, ElectricDamage, ToxinDamage, CriticalChance, CriticalMultiplier, AffinityChance);
         }
         if (collision.gameObject.TryGetComponent<BoxScript>(out BoxScript box))
         {
