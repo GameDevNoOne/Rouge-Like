@@ -8,11 +8,22 @@ public class RoomSpawner : MonoBehaviour
     private RoomTemplate roomTemplate;
     private int random;
     public bool Spawned = false;
+    public GameObject Player;
 
     public void Start()
     {
         roomTemplate = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomTemplate>();
-        Invoke("Spawn", 0.1f);
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<GameObject>();
+    }
+
+    public void Update()
+    {
+        float playerDistance = Mathf.Abs((Player.transform.position.x * Player.transform.position.x + Player.transform.position.y * Player.transform.position.y) - (gameObject.transform.position.x * gameObject.transform.position.x + gameObject.transform.position.y * gameObject.transform.position.y));
+
+        if (playerDistance <= 1296)
+        {
+            Spawn();
+        }
     }
 
     public void Spawn()

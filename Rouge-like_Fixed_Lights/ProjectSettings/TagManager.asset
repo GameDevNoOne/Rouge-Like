@@ -11,6 +11,7 @@ TagManager:
   - ClosedRoom
   - Coin
   - Bonus
+  - BoxSpawnPoint
   layers:
   - Default
   - TransparentFX
