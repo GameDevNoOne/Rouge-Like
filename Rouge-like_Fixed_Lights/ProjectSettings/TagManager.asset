@@ -12,6 +12,8 @@ TagManager:
   - Coin
   - Bonus
   - BoxSpawnPoint
+  - Room
+  - RewardPool
   layers:
   - Default
   - TransparentFX

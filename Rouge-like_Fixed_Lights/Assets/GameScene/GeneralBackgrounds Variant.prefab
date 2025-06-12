@@ -1276,11 +1276,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxSpawns: {fileID: 5757754339450265096}
-  box: {fileID: 0}
+  box: {fileID: 7085322853100742882, guid: b954ce19b0cbc0443b3251ca32ed6ea5, type: 3}
   wallSpawns: {fileID: 901403138026685790}
-  wall: {fileID: 0}
+  wall: {fileID: 756521546045042592, guid: 5be58861a833cfb43ab5b14f3e0d7c94, type: 3}
   chestSpawns: {fileID: 3138006508889847888}
-  chest: {fileID: 0}
+  chest: {fileID: 5924357669573302311, guid: 0aee2bb35ede12b468cec6378fc57aac, type: 3}
+  Player: {fileID: 0}
 --- !u!1 &2391246633653168063
 GameObject:
   m_ObjectHideFlags: 0

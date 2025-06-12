@@ -8,10 +8,13 @@ public class ChestScript : MonoBehaviour
     public BoxCollider2D trigger;
     public Sprite openChest;
     public GameObject rewardPool;
+    List<GameObject> rewards;
+    bool hasSpawned;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rewardPool = GameObject.FindGameObjectWithTag("RewardPool");
+        rewards = rewardPool.GetComponent<RewardPool>().rewards;
     }
 
     // Update is called once per frame
@@ -24,8 +27,12 @@ public class ChestScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            float playerLevel = collision.gameObject.GetComponent<PlayerStats>().Level;
-            OpenChest(playerLevel);
+            if (!hasSpawned)
+            {
+                float playerLevel = collision.gameObject.GetComponent<PlayerStats>().Level;
+                OpenChest(playerLevel);
+                hasSpawned = true;
+            }
         }
     }
 
@@ -37,6 +44,14 @@ public class ChestScript : MonoBehaviour
 
     void SummonRewards(float playerLevel)
     {
-        Debug.Log("Chest opened");
+        int i = Random.Range(0, 100);
+        if (i >= rewards.Count/2)
+        {
+            Instantiate(rewards[0], gameObject.transform.position, gameObject.transform.rotation);
+        }
+        else
+        {
+            Instantiate(rewards[1], gameObject.transform.position, gameObject.transform.rotation);
+        }
     }
 }

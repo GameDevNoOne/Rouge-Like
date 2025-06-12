@@ -6,7 +6,7 @@ public class expScript : MonoBehaviour
 {
     public float value;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent<PlayerActions>(out PlayerActions player))
         {

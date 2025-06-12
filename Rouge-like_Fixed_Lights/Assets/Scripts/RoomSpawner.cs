@@ -8,12 +8,13 @@ public class RoomSpawner : MonoBehaviour
     private RoomTemplate roomTemplate;
     private int random;
     public bool Spawned = false;
-    public GameObject Player;
+    private GameObject Player;
 
     public void Start()
     {
         roomTemplate = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomTemplate>();
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<GameObject>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+        Invoke("Spawn", 0.1f);
     }
 
     public void Update()
@@ -22,7 +23,7 @@ public class RoomSpawner : MonoBehaviour
 
         if (playerDistance <= 1296)
         {
-            Spawn();
+//          Spawn();
         }
     }
 
