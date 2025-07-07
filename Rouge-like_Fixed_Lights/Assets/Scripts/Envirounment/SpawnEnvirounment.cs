@@ -6,13 +6,13 @@ public class SpawnEnvirounment : MonoBehaviour
 {
     [Header("Locations and objects")]
     public GameObject boxSpawns;
-    Transform[] boxSpawnLocs;
+    public Transform[] boxSpawnLocs;
     public GameObject box;
     public GameObject wallSpawns;
-    Transform[] wallSpawnLocs;
+    public Transform[] wallSpawnLocs;
     public GameObject wall;
     public GameObject chestSpawns;
-    Transform[] chestSpawnLocs;
+    public Transform[] chestSpawnLocs;
     public GameObject chest;
 
     [Header("Player")]
@@ -23,9 +23,9 @@ public class SpawnEnvirounment : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        boxSpawnLocs = boxSpawns.GetComponentsInChildren<Transform>(CompareTag("SpawnPoint"));
-        wallSpawnLocs = wallSpawns.GetComponentsInChildren<Transform>(CompareTag("SpawnPoint"));
-        chestSpawnLocs = chestSpawns.GetComponentsInChildren<Transform>(CompareTag("SpawnPoint"));
+        boxSpawnLocs = getFirstChildren(boxSpawns.transform);
+        wallSpawnLocs = getFirstChildren(wallSpawns.transform);
+        chestSpawnLocs = getFirstChildren(chestSpawns.transform);
         SpawnBoxes();
         SpawnPillars();
         SpawnChests();
@@ -34,6 +34,22 @@ public class SpawnEnvirounment : MonoBehaviour
     private void Update()
     {
 
+    }
+
+    private Transform[] getFirstChildren(Transform parent)
+    {
+        Transform[] children = parent.GetComponentsInChildren<Transform>();
+        Transform[] firstChildren = new Transform[parent.childCount];
+        int index = 0;
+        foreach (Transform child in children)
+        {
+            if (child.parent == parent)
+            {
+                firstChildren[index] = child;
+                index++;
+            }
+        }
+        return firstChildren;
     }
 
     void SpawnBoxes()

@@ -6,9 +6,9 @@ public class CoinScript : MonoBehaviour
 {
     public float value;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.GetComponent<Collider>().CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
