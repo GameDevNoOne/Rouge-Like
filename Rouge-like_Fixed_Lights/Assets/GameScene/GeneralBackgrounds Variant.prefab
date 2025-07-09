@@ -1138,6 +1138,57 @@ Transform:
   - {fileID: 2474856777885029988}
   m_Father: {fileID: 3523302439675868411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150382094605328329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3295075478223495821}
+  - component: {fileID: 4644023314280926323}
+  m_Layer: 0
+  m_Name: AStarPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3295075478223495821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150382094605328329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5799659940824605396}
+  m_Father: {fileID: 3523302439675868411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4644023314280926323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150382094605328329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb077f417c7f6fb45ad1a26056072838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XminRange: -7.5
+  YminRange: -3.5
+  XmaxRange: 11.5
+  YmaxRange: 7.5
+  point: {fileID: 9120917356798090684, guid: 2a9f60cd967eb9a4d97a44fafb3f8be4, type: 3}
+  Spawner: {fileID: 5773409191046532006}
 --- !u!1 &1264938589477593749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,10 +1327,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxSpawns: {fileID: 5757754339450265096}
+  boxSpawnLocs: []
   box: {fileID: 7085322853100742882, guid: b954ce19b0cbc0443b3251ca32ed6ea5, type: 3}
   wallSpawns: {fileID: 901403138026685790}
+  wallSpawnLocs: []
   wall: {fileID: 756521546045042592, guid: 5be58861a833cfb43ab5b14f3e0d7c94, type: 3}
   chestSpawns: {fileID: 3138006508889847888}
+  chestSpawnLocs: []
   chest: {fileID: 5924357669573302311, guid: 0aee2bb35ede12b468cec6378fc57aac, type: 3}
   Player: {fileID: 0}
 --- !u!1 &2391246633653168063
@@ -1913,6 +1967,37 @@ Transform:
   - {fileID: 170731546893886571}
   - {fileID: 2407287793352163195}
   m_Father: {fileID: 3523302439675868411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5773409191046532006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5799659940824605396}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5799659940824605396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773409191046532006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3295075478223495821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6280439974431205006
 GameObject:
@@ -20021,6 +20106,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4814464545867865635, guid: 85e5e57167b2c1948866dc96f4581084, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6545808329538638076}
+    - targetCorrespondingSourceObject: {fileID: 4814464545867865635, guid: 85e5e57167b2c1948866dc96f4581084, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3295075478223495821}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85e5e57167b2c1948866dc96f4581084, type: 3}
 --- !u!4 &3523302439675868411 stripped
