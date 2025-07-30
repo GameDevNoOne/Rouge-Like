@@ -17588,6 +17588,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: BossRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 4249830127845949079, guid: 85e5e57167b2c1948866dc96f4581084, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4814464545867865635, guid: 85e5e57167b2c1948866dc96f4581084, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17657,3 +17661,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa9df4018a96d348b78ff8a3144242f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossRoomDecided: 0
